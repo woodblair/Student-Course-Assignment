@@ -1,0 +1,9 @@
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\bin\Debug\StudentCourse.exe.config
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\obj\Debug\StudentCourse.MainForm.resources
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\obj\Debug\StudentCourse.Properties.Resources.resources
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\obj\Debug\StudentCourse.csproj.GenerateResource.Cache
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\bin\Debug\StudentCourse.exe
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\bin\Debug\StudentCourse.pdb
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\obj\Debug\StudentCourse.exe
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\obj\Debug\StudentCourse.pdb
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\obj\Debug\StudentCourse.csprojResolveAssemblyReference.cache

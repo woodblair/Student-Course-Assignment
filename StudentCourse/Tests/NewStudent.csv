@@ -1,0 +1,19 @@
+﻿user_id, user_name, course_id, state
+1001, "John Luck", 0001, active
+1002, "Brian Wood", 0001, active
+1003, "Alex Walker", 0005, active
+1004, "Brian Jiang", 0002, active
+1005, "Sarash Nanshi", 0003, active
+1006, "Andy Wood", 0002, active
+1007, "Ali Suman", 0003, active
+1008, "Dave Woody", 0005, deleted
+1012, "Sam Suzuki", 0004, active
+1013, "Ulan Yanaany", 0001, active
+1015, "Lisa Vandensi", 0002, active
+1022, "Brian Wood", 0001, deleted
+1023, "Brian Wood", 0002, active
+1016, "Lisa Kuang", 0003, active
+1018, "Roi Vandensi", 0004, active
+1030, "Sushi Karaansani", 0002, active
+1031, "Ashish, Gundi", 0005, active
+1033, "Ying Chen", 0001, active

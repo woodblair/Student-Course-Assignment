@@ -1,0 +1,9 @@
+C:\Users\weiminli\VSProjects\StudentCourseLib\bin\Debug\StudentCourseLib.dll
+C:\Users\weiminli\VSProjects\StudentCourseLib\bin\Debug\StudentCourseLib.pdb
+C:\Users\weiminli\VSProjects\StudentCourseLib\obj\Debug\StudentCourseLib.dll
+C:\Users\weiminli\VSProjects\StudentCourseLib\obj\Debug\StudentCourseLib.pdb
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourseLib\bin\Debug\StudentCourseLib.dll
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourseLib\bin\Debug\StudentCourseLib.pdb
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourseLib\obj\Debug\StudentCourseLib.dll
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourseLib\obj\Debug\StudentCourseLib.pdb
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourseLib\obj\Debug\StudentCourseLib.csprojResolveAssemblyReference.cache

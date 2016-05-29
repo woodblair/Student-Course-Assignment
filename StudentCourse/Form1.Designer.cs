@@ -62,7 +62,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 53.27511F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 237F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 299F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
             this.tableLayoutPanel1.Controls.Add(this.studentButton, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.courseButton, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.showButton, 4, 0);
@@ -92,7 +92,7 @@
             this.studentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentButton.Location = new System.Drawing.Point(3, 3);
             this.studentButton.Name = "studentButton";
-            this.studentButton.Size = new System.Drawing.Size(98, 27);
+            this.studentButton.Size = new System.Drawing.Size(96, 27);
             this.studentButton.TabIndex = 0;
             this.studentButton.Text = "Load Students";
             this.studentButton.UseVisualStyleBackColor = false;
@@ -105,7 +105,7 @@
             this.courseButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.courseButton.Location = new System.Drawing.Point(3, 36);
             this.courseButton.Name = "courseButton";
-            this.courseButton.Size = new System.Drawing.Size(98, 25);
+            this.courseButton.Size = new System.Drawing.Size(96, 25);
             this.courseButton.TabIndex = 1;
             this.courseButton.Text = "Load Courses";
             this.courseButton.UseVisualStyleBackColor = false;
@@ -116,9 +116,9 @@
             this.showButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.showButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.showButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showButton.Location = new System.Drawing.Point(761, 3);
+            this.showButton.Location = new System.Drawing.Point(757, 3);
             this.showButton.Name = "showButton";
-            this.showButton.Size = new System.Drawing.Size(114, 27);
+            this.showButton.Size = new System.Drawing.Size(118, 27);
             this.showButton.TabIndex = 2;
             this.showButton.Text = "Show Courses";
             this.showButton.UseVisualStyleBackColor = false;
@@ -129,9 +129,9 @@
             this.saveButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.saveButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButton.Location = new System.Drawing.Point(761, 36);
+            this.saveButton.Location = new System.Drawing.Point(757, 36);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(114, 25);
+            this.saveButton.Size = new System.Drawing.Size(118, 25);
             this.saveButton.TabIndex = 3;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = false;
@@ -140,9 +140,9 @@
             // studentCsvPath
             // 
             this.studentCsvPath.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.studentCsvPath.Location = new System.Drawing.Point(107, 0);
+            this.studentCsvPath.Location = new System.Drawing.Point(105, 0);
             this.studentCsvPath.Name = "studentCsvPath";
-            this.studentCsvPath.Size = new System.Drawing.Size(112, 33);
+            this.studentCsvPath.Size = new System.Drawing.Size(110, 33);
             this.studentCsvPath.TabIndex = 4;
             this.studentCsvPath.Text = "Stuents CSV Path:";
             this.studentCsvPath.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -150,9 +150,9 @@
             // courseCsvPath
             // 
             this.courseCsvPath.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.courseCsvPath.Location = new System.Drawing.Point(107, 33);
+            this.courseCsvPath.Location = new System.Drawing.Point(105, 33);
             this.courseCsvPath.Name = "courseCsvPath";
-            this.courseCsvPath.Size = new System.Drawing.Size(112, 31);
+            this.courseCsvPath.Size = new System.Drawing.Size(110, 31);
             this.courseCsvPath.TabIndex = 5;
             this.courseCsvPath.Text = "Courses CSV Path:";
             this.courseCsvPath.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -162,9 +162,9 @@
             this.exitButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.exitButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(761, 67);
+            this.exitButton.Location = new System.Drawing.Point(757, 67);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(114, 27);
+            this.exitButton.Size = new System.Drawing.Size(118, 27);
             this.exitButton.TabIndex = 6;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = false;
@@ -174,7 +174,7 @@
             // 
             this.courseMsg.AutoSize = true;
             this.courseMsg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.courseMsg.Location = new System.Drawing.Point(462, 33);
+            this.courseMsg.Location = new System.Drawing.Point(458, 33);
             this.courseMsg.Name = "courseMsg";
             this.courseMsg.Size = new System.Drawing.Size(293, 31);
             this.courseMsg.TabIndex = 8;
@@ -184,7 +184,7 @@
             // 
             this.studentMsg.AutoSize = true;
             this.studentMsg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.studentMsg.Location = new System.Drawing.Point(462, 0);
+            this.studentMsg.Location = new System.Drawing.Point(458, 0);
             this.studentMsg.Name = "studentMsg";
             this.studentMsg.Size = new System.Drawing.Size(293, 33);
             this.studentMsg.TabIndex = 9;
@@ -193,7 +193,7 @@
             // studentText
             // 
             this.studentText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.studentText.Location = new System.Drawing.Point(225, 3);
+            this.studentText.Location = new System.Drawing.Point(221, 3);
             this.studentText.Name = "studentText";
             this.studentText.Size = new System.Drawing.Size(231, 20);
             this.studentText.TabIndex = 10;
@@ -202,7 +202,7 @@
             // courseText
             // 
             this.courseText.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.courseText.Location = new System.Drawing.Point(225, 36);
+            this.courseText.Location = new System.Drawing.Point(221, 36);
             this.courseText.Name = "courseText";
             this.courseText.Size = new System.Drawing.Size(231, 20);
             this.courseText.TabIndex = 11;

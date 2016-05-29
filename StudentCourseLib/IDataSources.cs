@@ -4,14 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentCourse
+namespace StudentCourseLib
 {
-    enum StorageType
+    public enum StorageType
     {
         CSV = 0,
         Excel
     }
-    interface IDataSource
+    /// <summary>
+    /// Data source interface.
+    /// </summary>
+    public interface IDataSource
     {
         StorageType Type
         {

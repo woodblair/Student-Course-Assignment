@@ -1,0 +1,14 @@
+C:\Users\weiminli\VSProjects\StudentCourses\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\weiminli\VSProjects\StudentCourses\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\weiminli\VSProjects\StudentCourses\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\weiminli\VSProjects\StudentCourses\UnitTests\bin\Debug\StudentCourseLib.dll
+C:\Users\weiminli\VSProjects\StudentCourses\UnitTests\bin\Debug\StudentCourseLib.pdb
+C:\Users\weiminli\VSProjects\StudentCourses\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\weiminli\VSProjects\StudentCourses\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\UnitTests\bin\Debug\StudentCourseLib.dll
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\UnitTests\bin\Debug\StudentCourseLib.pdb
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\UnitTests\obj\Debug\UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\UnitTests\obj\Debug\UnitTests.pdb

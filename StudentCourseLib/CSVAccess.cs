@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualBasic.FileIO;
 
-namespace StudentCourse
+namespace StudentCourseLib
 {
-    class CSVAccess : IDataSource
+    public class CSVAccess : IDataSource
     {
         string storege = string.Empty;
 
@@ -44,11 +44,15 @@ namespace StudentCourse
         {
             get { return StorageType.CSV; }
         }
-
+        /// <summary>
+        /// Instance a TextFieldParser object and return it to the caller. Caller need to release the instance.
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
         public TextFieldParser GetCSVParser(string path)
         {
             if (!File.Exists(path))
-                throw new ArgumentException(string.Format("Path {0} not found!", path));
+                throw new ArgumentException(string.Format("Path not found: {0}", path));
 
             TextFieldParser parser = new TextFieldParser(path);
             parser.TextFieldType = FieldType.Delimited;

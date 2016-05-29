@@ -7,12 +7,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualBasic.FileIO;
 
-namespace StudentCourse
+namespace StudentCourseLib
 {
     /// <summary>
     ///  Student data class used as an unique store by all student instances.
     /// </summary>
-    sealed class StudentCSV
+    public sealed class StudentCSV
     {
         CSVAccess csv = null;
         string storege;
@@ -32,11 +32,28 @@ namespace StudentCourse
             storege = csv.Storage;
         }
 
+        internal void AddStudent(string id, string name, string course, State state)
+        {
+            studentIdName.Add(id, name + ',' + course + ',' + state.ToString());
+        }
+
+        internal void UpdateStudent(string id, string name, string course, State state)
+        {
+            if (studentIdName.ContainsKey(id))
+            {
+                studentIdName[id] = name + ',' + course + ',' + state.ToString();
+            }
+            else
+            {
+                AddStudent(id, name, course, state);
+            }
+        }
+
         /// <summary>
         /// Initialize StudentCSV instance
         /// </summary>
         /// <returns></returns>
-        static internal StudentCSV Initialize()
+        static public StudentCSV Initialize()
         {
             if (instance == null)
             {
@@ -48,7 +65,7 @@ namespace StudentCourse
             return instance;
         }
 
-        internal async Task LoadDataAsync()
+        public async Task LoadDataAsync()
         {
             await LoadStudentsFromCSV();
         }
@@ -74,6 +91,9 @@ namespace StudentCourse
                     string[] fields = parser.ReadFields();
                     try
                     {
+                        if (studentIdName.ContainsKey((fields[0])))
+                            continue;
+
                         // key= id; fields: 1: name; 2: course_id; 3: state.
                         studentIdName.Add(fields[0], fields[1] + ',' + fields[2] + ',' + fields[3]);
 
@@ -101,7 +121,7 @@ namespace StudentCourse
         /// <summary>
         /// Course/Student maps
         /// </summary>
-        internal Hashtable CourseStudent
+        public Hashtable CourseStudent
         {
             get
             {
@@ -113,7 +133,7 @@ namespace StudentCourse
         /// Save Student data to storage.
         /// </summary>
         /// <returns></returns>
-        internal async Task SaveToCSVStorage()
+        public async Task SaveToCSVStorage()
         {
             string studentData = STUDENTRECORD + Environment.NewLine;
             var ie = studentIdName.GetEnumerator();
@@ -128,32 +148,19 @@ namespace StudentCourse
                 await writer.WriteAsync(studentData);
             }
         }
-
-        internal string GetStudentData(string id)
+        /// <summary>
+        /// Return student data for a give user_id, if found, null otherwise.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public string GetStudentData(string id)
         {
             if (studentIdName.ContainsKey(id))
             {
                 return studentIdName[id] as string;
             }
             return null;
-        }
-
-        internal void AddStudent(string id, string name, string course, State state)
-        {
-            studentIdName.Add(id, name + ',' + course + ',' + state.ToString());
-        }
-
-        internal void UpdateStudent(string id, string name, string course, State state)
-        {
-            if (studentIdName.ContainsKey(id))
-            {
-                studentIdName[id] = name + ',' + course + ',' + state.ToString();
-            }
-            else
-            {
-                AddStudent(id, name, course, state);
-            }
-        }
+        } 
 
         /// <summary>
         /// Processing Student CSV and update current student data accordingly.

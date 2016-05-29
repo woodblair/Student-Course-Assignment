@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentCourse
+namespace StudentCourseLib
 {
-    internal enum State
+    public enum State
     {
         active = 0,
         deleted
@@ -16,7 +16,7 @@ namespace StudentCourse
     /// <summary>
     /// Student class that maintains student id, name, course selected, and state.
     /// </summary>
-    class Student
+    public class Student
     {
         string user_id;
         string user_name;
@@ -96,7 +96,11 @@ namespace StudentCourse
             get { return this.state; }
             set { this.state = value; }
         }
-
+        /// <summary>
+        /// Search for the student for a given user_id. If not found, return null.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Student FindStudent(string id)
         {
             var sInfo = GetData(id);

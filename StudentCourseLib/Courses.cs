@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentCourse
+namespace StudentCourseLib
 {
-    class Course
+    public class Course
     {
         string course_id;
         string course_name;
@@ -20,7 +20,9 @@ namespace StudentCourse
 
             return common.GetCourseData(id);
         }
-
+        /// <summary>
+        /// Update a course data.
+        /// </summary>
         void UpdateCourse()
         {
             var sInfo = GetData(course_id);
@@ -77,7 +79,11 @@ namespace StudentCourse
                 }
             }
         }
-
+        /// <summary>
+        /// Search for course with the give course_id.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public Course FindCourse(string id)
         {
             var sInfo = GetData(id);
@@ -85,7 +91,7 @@ namespace StudentCourse
 
             string[] entries = sInfo.Split(',');
             this.course_name = entries[0];
-            this.state = (State)Enum.Parse(typeof(State), entries[2]);
+            this.state = (State)Enum.Parse(typeof(State), entries[1]);
             return this;
         }
     }

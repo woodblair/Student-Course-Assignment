@@ -7,15 +7,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualBasic.FileIO;
 
-namespace StudentCourse
+namespace StudentCourseLib
 {
-    sealed class CourseCSV
+    public sealed class CourseCSV
     {
         CSVAccess csv = null;
         string storage;
         // Course columns
         const string COURSERECORD = "course_id, course_name, state";
-        // Hashtable for quick search courses.
+        // Hash table for quick search courses.
         Hashtable courseIdName = new Hashtable();
         // singleton
         static CourseCSV instance = null;
@@ -26,12 +26,39 @@ namespace StudentCourse
             csv = new CSVAccess("Course");
             storage = csv.Storage;
         }
+        /// <summary>
+        /// Add a new course to the list.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <param name="state"></param>
+        void AddCourse(string id, string name, State state)
+        {
+            courseIdName.Add(id, name + ',' + state.ToString());
+        }
+        /// <summary>
+        /// Update an existing course.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <param name="state"></param>
+        internal void UpdateCourse(string id, string name, State state)
+        {
+            if (courseIdName.ContainsKey(id))
+            {
+                courseIdName[id] = name + ',' + state.ToString();
+            }
+            else
+            {
+                AddCourse(id, name, state);
+            }
+        }
 
         /// <summary>
         /// Initialize CourseCSV instance and load course data from storage, if any.
         /// </summary>
         /// <returns></returns>
-        static internal CourseCSV Initialize()
+        static public CourseCSV Initialize()
         {
             if (instance == null)
             {
@@ -43,11 +70,6 @@ namespace StudentCourse
                 }
             }
             return instance;
-        }
-
-        internal async Task LoadDataAsync()
-        {
-            await LoadCourseData();
         }
 
         /// <summary>
@@ -69,7 +91,8 @@ namespace StudentCourse
                     string[] fields = parser.ReadFields();
                     try
                     {
-                        courseIdName.Add(fields[0], fields[1] + ',' + fields[2]);
+                        if(!courseIdName.ContainsKey(fields[0]))
+                            courseIdName.Add(fields[0], fields[1] + ',' + fields[2]);
                     }
                     catch (Exception ex)
                     {
@@ -96,34 +119,24 @@ namespace StudentCourse
                 }
             }
         }
-
-        internal string GetCourseData(string id)
+        /// <summary>
+        /// return course data for a give course id, if exist.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        public string GetCourseData(string id)
         {
             if (courseIdName.ContainsKey(id))
             {
                 return (string)courseIdName[id];
             }
             return null;
-        }
-
-        internal void AddCourse(string id, string name, State state)
-        {
-            courseIdName.Add(id, name + ',' + state.ToString());
-        }
-
-        internal void UpdateCourse(string id, string name, State state)
-        {
-            if (courseIdName.ContainsKey(id))
-            {
-                courseIdName[id] = name + ',' + state.ToString();
-            }
-            else
-            {
-                AddCourse(id, name, state);
-            }
-        }
-
-        internal async Task SaveToCSVStorage()
+        } 
+        /// <summary>
+        /// Save current course data to CSV Storage, at the same location as the executable.
+        /// </summary>
+        /// <returns></returns>
+        public async Task SaveToCSVStorage()
         {
             string coursesData = COURSERECORD + Environment.NewLine;
             var ie = courseIdName.GetEnumerator();
@@ -138,7 +151,10 @@ namespace StudentCourse
                 await writer.WriteAsync(coursesData);
             }
         }
-
+        /// <summary>
+        /// process a course CSV file and load the data to memory.
+        /// </summary>
+        /// <param name="path"></param>
         public void ProcessCSV(string path)
         {
             if (!File.Exists(path))

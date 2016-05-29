@@ -7,3 +7,16 @@ C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\bin\Debug\Stude
 C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\obj\Debug\StudentCourse.exe
 C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\obj\Debug\StudentCourse.pdb
 C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\obj\Debug\StudentCourse.csprojResolveAssemblyReference.cache
+C:\Users\weiminli\VSProjects\StudentCourses\bin\Debug\StudentCourse.exe.config
+C:\Users\weiminli\VSProjects\StudentCourses\bin\Debug\StudentCourse.exe
+C:\Users\weiminli\VSProjects\StudentCourses\bin\Debug\StudentCourse.pdb
+C:\Users\weiminli\VSProjects\StudentCourses\bin\Debug\StudentCourseLib.dll
+C:\Users\weiminli\VSProjects\StudentCourses\bin\Debug\StudentCourseLib.pdb
+C:\Users\weiminli\VSProjects\StudentCourses\obj\Debug\StudentCourse.csprojResolveAssemblyReference.cache
+C:\Users\weiminli\VSProjects\StudentCourses\obj\Debug\StudentCourse.MainForm.resources
+C:\Users\weiminli\VSProjects\StudentCourses\obj\Debug\StudentCourse.Properties.Resources.resources
+C:\Users\weiminli\VSProjects\StudentCourses\obj\Debug\StudentCourse.csproj.GenerateResource.Cache
+C:\Users\weiminli\VSProjects\StudentCourses\obj\Debug\StudentCourse.exe
+C:\Users\weiminli\VSProjects\StudentCourses\obj\Debug\StudentCourse.pdb
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\bin\Debug\StudentCourseLib.dll
+C:\Users\Public\projects\Student-Course-Assignment\StudentCourse\bin\Debug\StudentCourseLib.pdb
